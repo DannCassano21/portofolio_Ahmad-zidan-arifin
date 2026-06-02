@@ -1,0 +1,61 @@
+Modernisasi Layanan BKN: Transformasi Digital SI MANG OLIN melalui Pendekatan Berbasis Data
+Proyek tugas besar ini bertujuan merancang platform layanan konsultasi digital untuk transformasi layanan kepegawaian di Kantor Regional III BKN Bandung guna mendukung aksesibilitas dan akuntabilitas (SDG 16).
+
+Type
+Information System & Business Dashboard
+Year
+2025
+
+Key Highlights
+
+Lokasi Study Case: Kantor Regional III Badan Kepegawaian Negara (Kanreg III BKN) Bandung.
+
+Aksesibilitas Layanan: Transformasi layanan konsultasi konvensional ke platform digital yang inklusif.
+
+Sistem Notifikasi: Implementasi pengingat otomatis via WhatsApp dan Email untuk efisiensi koordinasi.
+
+Monitoring Real-time: Dashboard khusus untuk melacak status pengajuan dari tahap verifikasi hingga selesai.
+
+Masalah Utama (Problem)
+
+Inefisiensi: Proses verifikasi data masih manual dan terpusat sehingga memperlambat pelayanan.
+
+Komunikasi Terbatas: Kurangnya sistem notifikasi yang responsif untuk jadwal dan status konsultasi.
+
+Aksesibilitas: Kesulitan koordinasi antara ASN (Konseli) dengan BKN karena kendala jarak dan waktu.
+
+Impact & Results (Before vs After)
+
+Before: Verifikasi data manual yang memicu antrean panjang dan komunikasi jadwal hanya mengandalkan Telegram/lisan (rawan terlewat).
+
+After: Verifikasi sistematis oleh Validator mempercepat validasi, serta integrasi WhatsApp API & Email memastikan pengingat jadwal otomatis bagi semua pihak.
+
+Impact: Meningkatkan transparansi lembaga sesuai standar SDG 16, mempercepat respon layanan bagi ribuan ASN di Jawa Barat & Banten, serta memastikan tata kelola administrasi yang lebih terukur.
+
+Technical Documentation
+Sistem manajemen konseling online dengan fitur Ticketing System untuk penjadwalan mandiri. Membagi akses ke dalam empat peran (Validator, Konselor, Konseli, dan Petugas PPT) untuk menjamin validitas data dan alur kerja yang terstruktur.
+
+Tools & Technologies
+
+Design: Figma (UI/UX Design)
+
+API Integration: WhatsApp Gateway & Google Calendar
+
+Analisis: BPMN (Business Process Model and Notation)
+
+Technical Skills Applied
+
+System Analysis & Design: Pemodelan proses bisnis (Use Case, Activity, & Sequence Diagram).
+
+Database Architecting: Perancangan struktur data melalui ERD dan Normalisasi.
+
+Usability Testing: Pengujian pengalaman pengguna menggunakan metode System Usability Scale (SUS).
+
+Key Insights
+→ Efisiensi Birokrasi: Digitalisasi memangkas proses panjang dan meminimalkan anomali data melalui verifikasi sistem.
+→ Disiplin Jadwal: Integrasi WhatsApp API secara signifikan meningkatkan tingkat kehadiran konsultasi tepat waktu.
+→ User-Friendly: Hasil pengujian SUS menunjukkan sistem sangat layak digunakan dan mudah dipahami oleh berbagai karakteristik pengguna (ASN & Pensiunan).
+
+Links & Resources
+
+[Link Dokumentasi / Prototype]
