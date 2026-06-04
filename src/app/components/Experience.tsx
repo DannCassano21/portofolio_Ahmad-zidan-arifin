@@ -19,7 +19,7 @@ export function Experience() {
       type: "social",
       period: "2026",
       duration: "8 weeks",
-      location: "Bandung, Indonesia",
+      location: "SMPK Kalam Kudus, Bandung",
       image: "https://i.imgur.com/PUoU2lj.jpeg",
       subtitle: "Ekosistem edukasi yang mengintegrasikan Generative AI dengan nilai Pancasila sebagai filter etika bagi siswa menengah di Bandung",
       highlights: [

@@ -122,13 +122,16 @@ export function About() {
 
                   {/* Buttons - Compact di mobile */}
                   <div className="space-y-2">
-                    <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white text-xs md:text-sm py-2">
-                      Download CV
+                    <Button
+                      className="w-full bg-amber-600 hover:bg-amber-700 text-white text-xs md:text-sm py-2"
+                      onClick={() => window.open('https://drive.google.com/file/d/1QtppdTqZjWDxQD6fvoJCTYtIAUr8fpxz/preview', '_blank')}
+                    >
+                      View CV
                     </Button>
-                    <Button 
+                    <Button
                       variant="outline"
                       className="w-full border-2 border-amber-600 text-amber-700 hover:bg-amber-50 text-xs md:text-sm py-2"
-                      onClick={() => window.open('https://drive.google.com/drive/u/0/folders/1j3mhPm9xWPVEF0FoeCKCWFJAlUc7rsRv', '_blank')}
+                      onClick={() => window.open('https://drive.google.com/file/d/1LBCD0b0M2wA2LuGbAVutiEKmvJnZs-DH/preview', '_blank')}
                     >
                       <FolderKanban className="w-3.5 md:w-4 h-3.5 md:h-4 mr-1.5 md:mr-2" />
                       View Portfolio
@@ -146,13 +149,13 @@ export function About() {
                 <h3 className="text-lg md:text-2xl font-bold text-slate-900 mb-2 md:mb-4">Hello! 👋</h3>
                 <div className="space-y-2 md:space-y-4 text-xs md:text-base text-slate-700 leading-relaxed">
                   <p>
-                    Saya adalah mahasiswa <span className="font-semibold text-amber-800">S1 Sistem Informasi di Telkom University</span> dengan passion yang besar terhadap dunia data analysis dan business intelligence.
+                    Mahasiswa S1 Sistem Informasi di Telkom University yang <span className="font-semibold text-amber-800">detail-oriented dan analitis</span> dengan ketertarikan kuat pada bidang data analytics, business process redesign, dan database management.
                   </p>
                   <p>
-                    Saya memiliki ketertarikan besar pada bagaimana <span className="font-semibold text-amber-800">data dapat diolah menjadi insight</span> yang mendukung pengambilan keputusan bisnis yang tepat. Berpengalaman magang di <span className="font-semibold text-amber-800">BKN Pusat – Direktorat PDPI</span> dalam pengelolaan dan penyajian data, serta terbiasa menggunakan Excel, dashboard, dan sistem enterprise (SAP).
+                    Memiliki <span className="font-semibold text-amber-800">pengalaman nyata dalam pengolahan dan visualisasi data berskala besar</span> selama magang di Badan Kepegawaian Negara (BKN Pusat). Menguasai pemodelan alur kerja bisnis yang kompleks, perancangan database relasional, dan pengembangan aplikasi web responsif.
                   </p>
                   <p className="hidden md:block">
-                    Saya percaya bahwa setiap data memiliki cerita, dan tugas seorang analis adalah menceritakannya dengan cara yang mudah dipahami dan berdampak. Melalui kombinasi analytical thinking dan business acumen, saya berusaha menghasilkan insight yang actionable dan value-driven.
+                    Siap berkontribusi aktif dan menerapkan <span className="font-semibold text-amber-800">pemecahan masalah strategis</span> untuk peran profesional sebagai data analyst maupun business analyst.
                   </p>
                 </div>
               </CardContent>

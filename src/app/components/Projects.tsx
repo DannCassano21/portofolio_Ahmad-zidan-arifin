@@ -115,14 +115,12 @@ export function Projects() {
       tools: ["Figma", "Visual Paradigm", "Google Forms"],
       primaryTool: "visualparadigm",
       year: "2025",
-      duration: "3 months",
+      duration: "September - Desember 2025",
       image: "https://images.unsplash.com/photo-1619243142206-381c5aeda31c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb3Zlcm5tZW50JTIwZGlnaXRhbCUyMHNlcnZpY2UlMjB0cmFuc2Zvcm1hdGlvbnxlbnwxfHx8fDE3NzI2OTg0NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       description: "Perancangan sistem informasi layanan digital terpadu (SIOLIN) untuk mengotomatisasi verifikasi data, routing tiket, dan pengelolaan konsultasi ASN di lingkungan Kanreg III BKN Bandung guna mendukung tata kelola lembaga yang akuntabel (SDG 16).",
       subtitle: "Space untuk scrapbook akan ditambahkan di sini",
       highlights: [
         "End-to-End System Modeling: Merancang arsitektur sistem komprehensif melalui Use Case, 3 Activity Diagram, dan 3 Sequence Diagram untuk alur fungsional kritis (pengajuan jadwal, rating, dan unggah berkas)",
-        "Three-Tier Architecture Mapping: Menyusun Deployment Diagram berbasis struktur fisik Three-Tier Architecture (Client, Application dengan Laravel/Express.js, dan Database Layer MySQL)",
-        "Requirement Engineering: Merumuskan tabel spesifikasi kebutuhan fungsional dan non-fungsional sistem, termasuk enkripsi data AES-256 dan Role-Based Access Control (RBAC)",
         "High-Fidelity UI/UX Development: Mendesain antarmuka publik Landing Page (Beranda, Statistik, Validator, Bank Permasalahan), alur Autentikasi, serta fungsionalitas penuh untuk Dashboard Konselor"
       ],
       impact: "Menghasilkan dokumen cetak biru (blueprint) perancangan sistem informasi yang memodernisasi workflow verifikasi data kepegawaian untuk ±300 instansi. Desain sistem berhasil memangkas birokrasi manual lewat fitur otomatisasi notifikasi multi-saluran (WhatsApp/Email API) dan validasi terdesentralisasi. Pengujian awal via System Usability Scale (SUS) menunjukkan tingkat kepuasan yang tinggi dari kacamata fungsionalitas dan kemudahan penggunaan.",
