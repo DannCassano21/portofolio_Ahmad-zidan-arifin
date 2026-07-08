@@ -36,7 +36,7 @@ export function Certifications() {
       category: "Data Analysis & Business Intelligence",
       color: "bg-blue-600",
       image: "https://i.imgur.com/9Ml2MKa.png",
-      documentation: "Telah menyelesaikan kursus Master Data Analysis with Microsoft Excel & Power BI dengan total durasi 32,5 jam. Sertifikat ini mencakup keterampilan lanjutan dalam pengolahan data menggunakan Excel dan visualisasi data dengan Power BI.",
+      documentation: "Telah menyelesaikan kursus Master Data Analysis with Microsoft Excel & Power BI. Sertifikat ini mencakup keterampilan lanjutan dalam pengolahan data menggunakan Excel dan visualisasi data dengan Power BI.",
       duration: "32.5 hours",
       modules: [
         "Advanced Excel Functions: Lookup, PivotTable, Conditional Formatting",
@@ -254,19 +254,16 @@ function CertCard({ cert }: { cert: any }) {
 
               <div className="p-4">
                 <div className="flex flex-col items-center text-center">
-                  <h3 className="font-bold text-slate-900 text-base mb-2 leading-snug">
+                  <h3 className="font-bold text-slate-900 text-sm mb-2 leading-snug">
                     {cert.name}
                   </h3>
-                  
-                  <div className="space-y-1.5 mb-3 text-xs">
-                    <div className="flex items-center justify-center gap-2 text-slate-600">
-                      <Building2 className="w-3.5 h-3.5" />
-                      <span>{cert.provider}</span>
-                    </div>
-                    <div className="flex items-center justify-center gap-2 text-slate-600">
-                      <Calendar className="w-3.5 h-3.5" />
-                      <span>{cert.year}</span>
-                    </div>
+
+                  <div className="flex items-center justify-center gap-1.5 mb-3 text-xs text-slate-600">
+                    <Building2 className="w-3 h-3 flex-shrink-0" />
+                    <span>{cert.provider}</span>
+                    <span className="text-slate-400">·</span>
+                    <Calendar className="w-3 h-3 flex-shrink-0" />
+                    <span>{cert.year}</span>
                   </div>
 
                   {/* View Details Button - Visual Only */}
@@ -331,12 +328,6 @@ function CertCard({ cert }: { cert: any }) {
                 <span className="font-medium">Category:</span>
                 <Badge className="bg-amber-100 text-amber-800 text-xs">{cert.category}</Badge>
               </div>
-              {cert.duration && (
-                <div className="flex justify-between">
-                  <span className="font-medium">Duration:</span>
-                  <span>{cert.duration}</span>
-                </div>
-              )}
             </div>
           </div>
           <div>

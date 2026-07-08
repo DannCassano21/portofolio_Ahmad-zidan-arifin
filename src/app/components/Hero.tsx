@@ -23,16 +23,16 @@ export function Hero() {
           <div className="space-y-4 md:space-y-6 text-left">
             <div className="space-y-2 md:space-y-3">
               <p className="text-amber-700 font-medium tracking-wide text-sm md:text-base">Hello, I'm</p>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight text-slate-900">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-900 whitespace-nowrap">
                 Ahmad Zidan Arifin
               </h1>
-              <h2 className="text-lg md:text-2xl lg:text-3xl text-amber-800 font-light">
-                Business Analyst & Data Enthusiast
+              <h2 className="text-base md:text-xl lg:text-2xl text-amber-800 font-light">
+                Business Development & Data Analyst Enthusiast
               </h2>
             </div>
-            
-            <p className="text-sm md:text-lg text-slate-700 leading-relaxed">
-              Mahasiswa S1 Sistem Informasi Telkom University dengan fokus pada <span className="font-semibold text-amber-800">Business Analysis</span>. Berpengalaman dalam analisis data, identifikasi kebutuhan bisnis, dan perancangan solusi berbasis teknologi untuk mendukung efisiensi proses dan pengambilan keputusan strategis.
+
+            <p className="text-xs md:text-sm text-slate-600 leading-relaxed max-w-lg">
+              Mahasiswa S1 Sistem Informasi Telkom University dengan keahlian yang berimbang dalam <span className="font-semibold text-amber-800">analisis proses bisnis dan pengolahan data strategis</span>. Berpengalaman nyata dalam pemetaan proses As-Is ke To-Be, pemrosesan dataset berskala besar, serta menghasilkan rekomendasi yang data-driven dengan kombinasi teknis analitik (Python, SQL, Power BI) dan komunikasi strategis.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-2 md:pt-4">

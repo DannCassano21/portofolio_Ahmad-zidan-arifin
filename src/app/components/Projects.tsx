@@ -18,7 +18,7 @@ export function Projects() {
       tools: ["Visual Paradigm Enterprise", "Google Forms", "Microsoft Word", "Gemini AI"],
       primaryTool: "visualparadigm",
       year: "2026",
-      duration: "On-Progress",
+      duration: "Selesai ✓",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHByb2Nlc3MlMjBvcHRpbWl6YXRpb258ZW58MHx8fHwxNzAzMjUwMDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       organization: "Tugas Besar Rekayasa Proses Bisnis (RPB) – Telkom University",
       department: "Process Excellence & System Analysis",
@@ -36,7 +36,7 @@ export function Projects() {
         "Mengidentifikasi pemborosan dan hambatan birokrasi (As-Is)",
         "Merancang perbaikan proses (To-Be) dengan otomatisasi pelaporan & standardisasi komitmen kerja antar instansi"
       ],
-      impact: "(Status: On-Progress) Berhasil mengidentifikasi akar masalah utama yang menyebabkan total lead time proses mencapai 2 hingga 3 bulan hingga sistem go-live. Proyek ini memproyeksikan efisiensi waktu siklus hingga 30-40% pada usulan proses To-Be melalui pemotongan latency (jeda) rekapitulasi data manual dan minimalisasi miskomunikasi teknis antar instansi.",
+      impact: "Berhasil mengidentifikasi akar masalah utama yang menyebabkan total lead time proses mencapai 2 hingga 3 bulan hingga sistem go-live. Proyek ini memproyeksikan efisiensi waktu siklus hingga 30-40% pada usulan proses To-Be melalui pemotongan latency (jeda) rekapitulasi data manual dan minimalisasi miskomunikasi teknis antar instansi.",
       achievements: [
         "Berhasil memetakan visualisasi 7 aktivitas utama beserta sub-task operasional dari Start hingga End Event secara presisi",
         "Menemukan titik pemborosan finansial pada rapat offline berkisar Rp 1.500.000 - Rp 2.000.000 per pertemuan yang berpotensi dialihkan secara digital",
@@ -62,50 +62,56 @@ export function Projects() {
     },
     {
       icon: Database,
-      name: "Massive Data Mining & Sentiment Analysis",
+      name: "Aspect-Based Sentiment Analysis on Smartphone Brand Tweets",
       type: "Academic Data Science Project",
-      tools: ["Python", "Pandas", "Scikit-Learn (Sklearn)", "Jupyter/VS Code", "TF-IDF Vectorizer", "Min-Max Scaler"],
-      primaryTool: "powerbi",
+      tools: ["Python", "Scikit-Learn", "Pandas", "TF-IDF Vectorizer", "LinearSVC", "GridSearchCV", "Streamlit"],
+      primaryTool: "python",
       year: "2026",
-      duration: "On-Progress",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwc2NpZW5jZSUyMGFuYWx5c2lzfGVufDB8fHx8MTcwMzI1MDAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
-      organization: "Academic Project",
-      department: "Data Science & Analytics",
-      location: "Bekasi, Indonesia",
-      hasScrapbook: true,
+      duration: "Selesai — Best Kelompok 🏆",
+      image: "https://i.imgur.com/6t3eDD7.jpeg",
+      organization: "Tugas Besar Penambangan Data — Universitas Telkom 2026",
+      department: "Data Science & Machine Learning",
+      location: "Bandung, Indonesia",
+      architectureImage: "https://i.imgur.com/6t3eDD7.jpeg",
       highlights: [
-        "Big Data Processing: Mengelola dataset hampir 1 juta ulasan smartphone",
-        "End-to-End Pipeline: Merancang alur kerja Data Mining dengan CRISP-DM",
-        "Memory Optimization: Optimasi teknis untuk mencegah MemoryError",
-        "Text Normalization: Pipeline NLP untuk membersihkan teks dari noise"
+        "Large-Scale Text Processing: Membersihkan hampir 1 juta baris tweet dan mereduksi 735.548 data duplikat",
+        "Text-Aspect Fusion: Menggabungkan teks opini & aspek produk menjadi satu fitur representasi TF-IDF (5.000 fitur, n-gram 1–2)",
+        "Custom Stopwords: Mempertahankan kata negasi (not, no, never) untuk menjaga akurasi polaritas sentimen",
+        "Streamlit Deployment: Integrasi model ke web app interaktif untuk prediksi real-time & visualisasi word cloud"
       ],
       description: [
-        "Melakukan pembersihan data dengan menangani 20,4% nilai hilang dan duplikasi, mengeksekusi rekayasa fitur untuk metrik baru, serta menerapkan One-Hot Encoding pada fitur nominal. Data teks diolah dengan TF-IDF Vectorization dan fitur numerik dinormalisasi dengan Min-Max Scaling. Skenario pemodelan disiapkan menggunakan Logistic Regression, Multinomial Naive Bayes, dan XGBoost sebagai algoritma utama"
+        "Pembersihan Data Skala Besar: Melakukan text preprocessing menyeluruh (case folding, regex cleaning) dan mereduksi data dengan menghapus 735.548 data duplikat serta menangani 29,97% missing values",
+        "Rekayasa Fitur Pintar: Menggabungkan teks opini dan aspek produk menjadi satu fitur (Text-Aspect Fusion), lalu merepresentasikannya via TF-IDF (5.000 fitur, n-gram 1–2). Custom stopwords dibuat khusus untuk mempertahankan kata negasi",
+        "Pemodelan & Tuning: Membangun pipeline Linear SVM (LinearSVC) yang dioptimasi menggunakan GridSearchCV dan divalidasi dengan Stratified 5-Fold Cross Validation",
+        "Deployment: Mengintegrasikan model final ke dalam aplikasi web interaktif Streamlit untuk prediksi sentimen real-time dan visualisasi word cloud"
       ],
-      impact: "(Status: On-Progress) Berhasil men-transformasi 1 juta baris data mentah yang tidak terstruktur menjadi dataframe 50 kolom utama (features) yang sepenuhnya bersih dan siap latih. Proses optimasi memori memungkinkan seluruh tahapan komputasi berjalan lancar pada perangkat standar.",
+      impact: "Model terbaik (skema split data 70:30) berhasil mencapai Akurasi 99,99% dan skor ROC-AUC 1.0000 pada data uji. Berhasil mereduksi dataset mentah hampir 1 juta baris menjadi 264.451 baris data bersih siap latih tanpa kehilangan konteks makna sentimen. Proyek ini meraih predikat Best Kelompok pada Tugas Besar Penambangan Data Universitas Telkom 2026.",
       achievements: [
-        "Pembersihan data (20,4% missing values, duplikasi)",
-        "Rekayasa fitur (jumlah_kata, total_engagement)",
-        "One-Hot Encoding untuk fitur nominal",
-        "TF-IDF Vectorization & Min-Max Scaling",
-        "Pemodelan dengan Logistic Regression, Naive Bayes, dan XGBoost"
+        "Akurasi 99,99% & ROC-AUC 1.0000 pada data uji (skema 70:30)",
+        "Mereduksi hampir 1 juta baris menjadi 264.451 baris data bersih",
+        "Menghapus 735.548 data duplikat & menangani 29,97% missing values",
+        "Custom stopwords strategy untuk preservasi kata negasi kritis",
+        "Meraih predikat Best Kelompok — Tugas Besar Penambangan Data Universitas Telkom 2026"
       ],
-      documentation: "(1) Python Script & Jupyter Notebooks (.ipynb), (2) Data Cleaning & Preprocessing Report, (3) Feature Engineering & EDA Documentation, (4) Machine Learning Modeling Architecture",
+      documentation: "(1) Python Script & Jupyter Notebooks (.ipynb), (2) Data Cleaning & Preprocessing Report, (3) Text-Aspect Fusion Feature Engineering Documentation, (4) LinearSVC + GridSearchCV Modeling Pipeline, (5) Streamlit Web Application, (6) Laporan Akhir PDF",
       technicalSkills: [
-        "Big Data Handling",
         "Natural Language Processing (NLP)",
-        "Data Preprocessing",
-        "Feature Engineering",
-        "Categorical Encoding",
-        "Exploratory Data Analysis (EDA)"
+        "Aspect-Based Sentiment Analysis (ABSA)",
+        "Text Preprocessing & Feature Engineering",
+        "TF-IDF Vectorization",
+        "Support Vector Machine (LinearSVC)",
+        "Hyperparameter Tuning (GridSearchCV)",
+        "Stratified K-Fold Cross Validation",
+        "Streamlit Deployment"
       ],
       keyInsights: [
-        "Data Quality: Pembersihan teks (menghilangkan tanda baca dan case folding) secara signifikan mereduksi dimensi fitur pada model Text Mining, mencegah terjadinya ledakan memori saat proses vektorisasi",
-        "Computational Efficiency: Mengubah tipe data hasil pengkodean kategorikal dari int64 (8 byte) ke uint8 (1 byte) mampu menghemat alokasi memori RAM hingga 87%, sebuah teknik krusial dalam memproses jutaan baris data"
+        "Text-Aspect Fusion: Menggabungkan kolom teks dan aspek sebelum vektorisasi secara signifikan meningkatkan kemampuan model membedakan sentimen pada aspek yang berbeda dari tweet yang sama",
+        "Negation Preservation: Custom stopwords yang mempertahankan not/no/never adalah kunci akurasi polaritas — tanpa ini, 'not great battery' bisa salah diklasifikasikan sebagai sentimen positif",
+        "CRISP-DM End-to-End: Metodologi CRISP-DM memastikan setiap keputusan teknis (dari cleaning hingga deployment) terhubung kembali ke tujuan bisnis yang terukur"
       ],
       color: "bg-indigo-600",
       links: {
-        documentation: "#"
+        "Laporan PDF": "https://drive.google.com/file/d/1Ul9fQa4h5_cF2y-0CpUAe6MVphAQ6ADW/view?usp=sharing"
       }
     },
     {
@@ -178,33 +184,34 @@ export function Projects() {
     {
       icon: TrendingUp,
       name: "Analisis Kinerja Stockbit 2024",
-      type: "Financial Analysis",
+      type: "Financial Analysis Project",
       tools: ["Power BI", "Power Query", "DAX"],
       primaryTool: "powerbi",
       year: "2024",
       duration: "1 month",
       image: "https://i.imgur.com/jVineTK.png",
-      description: "Dashboard interaktif Power BI yang mengintegrasikan data Kinerja Keuangan (Realisasi vs Target), Pertumbuhan Nasabah, dan Analisis SDM untuk mengungkap gap Laba Bersih.",
-      highlights: [
-        "Data Modeling: Transpose data Keuangan & Unpivot data Demografi multi-tahun",
-        "DAX Lanjutan: MAXX, VALUE, SUBSTITUTE untuk konversi data teks/persen",
-        "Gap Analysis: Laba Bersih 38.4% dari target",
-        "HR Analytics: Turnover Rate tenaga kerja muda (Gen Z/Milenial)"
+      description: [
+        "Mengintegrasikan data keuangan, pertumbuhan nasabah, dan SDM ke dalam dashboard interaktif Power BI untuk mengungkap gap laba bersih perusahaan.",
+        "Mengeksekusi data modeling (transposing & unpivoting) serta menerapkan fungsi DAX tingkat lanjut (MAXX, VALUE, SUBSTITUTE) untuk pembersihan data.",
+        "Mengidentifikasi root cause gap laba bersih 38,4% akibat lonjakan biaya operasional 3x lipat, sekaligus memvalidasi korelasi stabilitas tenaga kerja muda terhadap pertumbuhan nasabah."
       ],
-      impact: "Mengidentifikasi root cause gap Laba Bersih: Biaya Operasional membengkak 3x lipat dari rencana meskipun revenue melampaui target. Validasi stabilitas tenaga kerja muda dengan Turnover Rate rendah mendukung pertumbuhan nasabah akseleratif.",
-      documentation: "Dashboard Power BI comprehensive dengan 3 fokus analisis: (1) Financial Performance - Realisasi vs Target dengan variance analysis, (2) Customer Growth - time-series nasabah dengan trend analysis, (3) HR Demographics - distribusi usia karyawan dan turnover metrics. Advanced Power Query: Transpose untuk time-series keuangan, Unpivot untuk multi-year demografi. DAX Functions: MAXX untuk agregasi, VALUE & SUBSTITUTE untuk data cleaning (konversi '7.95%' string ke numeric).",
+      highlights: [
+        "Data Modeling: Transpose data keuangan & unpivot data demografi multi-tahun",
+        "DAX Lanjutan: Konversi data teks/persen ke numerik (MAXX, VALUE, SUBSTITUTE)",
+        "Gap Analysis: Selisih laba bersih 38,4% di bawah target",
+        "HR Analytics: Analisis turnover rate tenaga kerja Gen Z/Milenial"
+      ],
+      impact: "Menemukan anomali biaya operasional 3x lipat sebagai penyebab utama gap laba bersih meskipun revenue melampaui target. Membuktikan efektivitas stabilitas SDM muda dalam mendukung akselerasi pertumbuhan nasabah.",
+      documentation: "Dashboard 3 fokus: Financial Performance (variance analysis), Customer Growth (time-series), dan HR Demographics. Advanced Power Query: Transpose dan unpivot untuk normalisasi data time-series.",
       technicalSkills: [
-        "Power BI Desktop",
-        "Power Query (Transpose, Unpivot)",
-        "DAX (MAXX, VALUE, SUBSTITUTE)",
-        "Data Modeling (Time-Series)",
-        "Financial Analysis",
-        "Variance Analysis"
+        "Financial & Variance Analysis",
+        "Data Modeling",
+        "Time-Series Analysis"
       ],
       keyInsights: [
-        "Financial: Laba Bersih 38.4% dari target karena OpEx 3x lipat (revenue exceed target)",
+        "Financial: Laba bersih turun 38,4% karena lonjakan biaya operasional",
         "Growth: Pertumbuhan nasabah akseleratif year-over-year",
-        "HR: Workforce didominasi Gen Z/Milenial dengan Turnover Rate rendah"
+        "HR: Workforce didominasi Gen Z/Milenial dengan turnover rate rendah"
       ],
       color: "bg-blue-600",
       links: {
@@ -259,9 +266,12 @@ export function Projects() {
         </div>
 
         <Tabs defaultValue="all" className="w-full">
-          <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-5 mb-8 bg-amber-50 border-2 border-amber-200">
+          <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-6 mb-8 bg-amber-50 border-2 border-amber-200">
             <TabsTrigger value="all" className="data-[state=active]:bg-amber-600 data-[state=active]:text-white text-xs md:text-sm">
               All
+            </TabsTrigger>
+            <TabsTrigger value="python" className="data-[state=active]:bg-amber-600 data-[state=active]:text-white text-xs md:text-sm">
+              Python
             </TabsTrigger>
             <TabsTrigger value="excel" className="data-[state=active]:bg-amber-600 data-[state=active]:text-white text-xs md:text-sm">
               Excel
@@ -319,6 +329,24 @@ export function Projects() {
             </div>
           </TabsContent>
 
+          <TabsContent value="python" className="space-y-6">
+            {/* Mobile Carousel */}
+            <div className="md:hidden">
+              <MobileCarousel slidesToShow={1.2}>
+                {projects.filter(project => project.primaryTool === "python").map((project, index) => (
+                  <ProjectCard key={index} project={project} />
+                ))}
+              </MobileCarousel>
+            </div>
+
+            {/* Desktop Grid */}
+            <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {projects.filter(project => project.primaryTool === "python").map((project, index) => (
+                <ProjectCard key={index} project={project} />
+              ))}
+            </div>
+          </TabsContent>
+
           <TabsContent value="excel" className="space-y-6">
             {/* Mobile Carousel */}
             <div className="md:hidden">
@@ -328,7 +356,7 @@ export function Projects() {
                 ))}
               </MobileCarousel>
             </div>
-            
+
             {/* Desktop Grid */}
             <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {projects.filter(project => project.primaryTool === "excel").map((project, index) => (
@@ -471,8 +499,20 @@ function ProjectCard({ project }: { project: any }) {
             </div>
           )}
 
-          {/* Scrapbook Placeholder for DPMPTSP & Data Mining */}
-          {project.hasScrapbook && (
+          {/* Architecture/Scrapbook image for projects that have one */}
+          {project.architectureImage && (
+            <div className="rounded-lg overflow-hidden border-2 border-indigo-200">
+              <img
+                src={project.architectureImage}
+                alt="Project Architecture"
+                className="w-full object-cover"
+              />
+              <p className="text-xs text-center text-slate-500 bg-indigo-50 py-2">Arsitektur & Tampilan Proyek</p>
+            </div>
+          )}
+
+          {/* Scrapbook Placeholder for projects still in progress */}
+          {project.hasScrapbook && !project.architectureImage && (
             <div className="p-6 bg-gradient-to-br from-orange-50 to-amber-50 border-2 border-orange-200 rounded-lg">
               <p className="text-sm text-center text-orange-700 font-medium italic">📊 Space untuk Laporan Proyek</p>
               <p className="text-xs text-center text-slate-500 mt-1">Dokumentasi laporan akan ditambahkan di sini</p>

@@ -30,10 +30,10 @@ export function About() {
       title: "Data Skills",
       color: "bg-amber-100 text-amber-700 border-amber-200",
       skills: [
-        "Microsoft Excel (Pivot Table, IF, SUMIFS, Data Cleaning)",
-        "Data Reporting & Dashboard",
-        "Spreadsheet Management",
-        "Data Visualization"
+        "Microsoft Excel (Advanced: Pivot Table, Index Match, Calculated Fields)",
+        "Large-Scale Data Processing & Cleaning",
+        "Exploratory Data Analysis (EDA)",
+        "Executive Data Reporting & Dashboarding"
       ]
     },
     {
@@ -41,10 +41,10 @@ export function About() {
       title: "Business Skills",
       color: "bg-orange-100 text-orange-700 border-orange-200",
       skills: [
-        "Business Analysis Basic",
-        "Process Monitoring",
-        "Data Documentation",
-        "Stakeholder Management"
+        "Business Process Redesign (BPMN 2.0)",
+        "Requirements Gathering & Analysis",
+        "System Architecture Documentation (UML)",
+        "Cross-Functional Stakeholder Management"
       ]
     },
     {
@@ -52,25 +52,22 @@ export function About() {
       title: "Tools & Technology",
       color: "bg-red-100 text-red-700 border-red-200",
       skills: [
-        "Excel",
-        "Google Sheets",
-        "SAP (MM & FI - Basic)",
-        "Tableau (Basic)",
-        "Power BI (Basic)",
-        "Visual Paradigm",
-        "Figma",
-        "Canva"
+        "Python (Pandas, NumPy, Scikit-Learn)",
+        "SQL (MySQL)",
+        "Power BI & Tableau",
+        "Streamlit",
+        "Visual Paradigm & Figma",
+        "Microsoft Excel & Google Sheets"
       ]
     }
   ];
 
   const additionalCompetencies = [
-    "Critical Thinking & Problem Solving",
-    "Data Governance & Documentation",
-    "Communication & Presentation",
-    "Team Collaboration",
-    "Time Management",
-    "Adaptability"
+    "Analytical Problem Solving",
+    "Data & Insights Communication",
+    "Cross-Functional Collaboration",
+    "Detail-Oriented & Accuracy",
+    "Adaptability & Continuous Learning"
   ];
 
   return (
@@ -124,7 +121,7 @@ export function About() {
                   <div className="space-y-2">
                     <Button
                       className="w-full bg-amber-600 hover:bg-amber-700 text-white text-xs md:text-sm py-2"
-                      onClick={() => window.open('https://drive.google.com/file/d/1QtppdTqZjWDxQD6fvoJCTYtIAUr8fpxz/preview', '_blank')}
+                      onClick={() => window.open('https://drive.google.com/file/d/14uSeP4_684XJsn8qTlta9p4oTgQXNpUV/preview', '_blank')}
                     >
                       View CV
                     </Button>
@@ -146,16 +143,13 @@ export function About() {
           <div className="md:col-span-3 space-y-4 md:space-y-6">
             <Card className="border-2 border-amber-200 bg-amber-50/50">
               <CardContent className="p-4 md:p-6">
-                <h3 className="text-lg md:text-2xl font-bold text-slate-900 mb-2 md:mb-4">Hello! 👋</h3>
-                <div className="space-y-2 md:space-y-4 text-xs md:text-base text-slate-700 leading-relaxed">
+                <h3 className="text-base md:text-lg font-bold text-slate-900 mb-2 md:mb-3">Hello! 👋</h3>
+                <div className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-slate-600 leading-relaxed">
                   <p>
-                    Mahasiswa S1 Sistem Informasi di Telkom University yang <span className="font-semibold text-amber-800">detail-oriented dan analitis</span> dengan ketertarikan kuat pada bidang data analytics, business process redesign, dan database management.
-                  </p>
-                  <p>
-                    Memiliki <span className="font-semibold text-amber-800">pengalaman nyata dalam pengolahan dan visualisasi data berskala besar</span> selama magang di Badan Kepegawaian Negara (BKN Pusat). Menguasai pemodelan alur kerja bisnis yang kompleks, perancangan database relasional, dan pengembangan aplikasi web responsif.
+                    Mahasiswa S1 Sistem Informasi Telkom University yang <span className="font-semibold text-amber-800">analitis & detail-oriented</span>, dengan ketertarikan kuat pada irisan Business Development dan Data Analytics.
                   </p>
                   <p className="hidden md:block">
-                    Siap berkontribusi aktif dan menerapkan <span className="font-semibold text-amber-800">pemecahan masalah strategis</span> untuk peran profesional sebagai data analyst maupun business analyst.
+                    Berpengalaman mengolah dataset berskala besar dan membangun <span className="font-semibold text-amber-800">dashboard visualisasi interaktif</span> selama magang di BKN Pusat (Direktorat PDPI), serta menguasai Business Process Redesign (BPMN 2.0) untuk merancang solusi digital yang efisien. Siap berkontribusi aktif sebagai Business Development Intern maupun Data Analyst dengan pendekatan data-driven yang strategis.
                   </p>
                 </div>
               </CardContent>
@@ -274,7 +268,7 @@ export function About() {
           </Card>
           <Card className="border-2 border-amber-200 hover:border-amber-400 transition-all">
             <CardContent className="p-2 md:p-4 text-center">
-              <div className="text-xl md:text-3xl font-bold text-purple-600 mb-0.5 md:mb-1">1</div>
+              <div className="text-xl md:text-3xl font-bold text-purple-600 mb-0.5 md:mb-1">2</div>
               <div className="text-[9px] md:text-xs text-slate-600">Organization</div>
             </CardContent>
           </Card>

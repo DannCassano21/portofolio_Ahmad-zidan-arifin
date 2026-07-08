@@ -68,15 +68,13 @@ export function Experience() {
       location: "Jakarta, Indonesia",
       image: "https://i.imgur.com/7qoUkjZ.png",
       description: [
-        "Mengolah dan menganalisis data kependudukan dan ASN periode 2021–2024 dari 548 instansi pemerintah",
-        "Menyusun dashboard visualisasi data menggunakan Excel dan tools BI untuk penyajian data yang informatif",
-        "Mempelajari dan mendokumentasikan alur pemrosesan database ASN skala nasional",
+        "Mengolah, membersihkan, dan menganalisis dataset data kependudukan serta Aparatur Sipil Negara (ASN) periode 2021–2024 yang mencakup 548 instansi pemerintah secara nasional",
+        "Merancang dan mengembangkan dashboard visualisasi interaktif menggunakan Power BI dan Tableau guna menyajikan tren data kependudukan secara informatif dan mudah dipahami",
         "Berkolaborasi dengan tim untuk memastikan akurasi dan konsistensi data"
       ],
       achievements: [
         "Berhasil memproses 548 dataset instansi dengan tingkat akurasi 99%",
-        "Membuat 5+ dashboard interaktif untuk monitoring data ASN",
-        "Mengurangi waktu processing data sebesar 30% melalui optimasi workflow"
+        "Membuat dashboard interaktif untuk monitoring data ASN",
       ],
       skills: ["Excel", "Data Processing", "Dashboard", "Data Visualization", "Government Data"],
       color: "bg-blue-600"
