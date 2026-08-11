@@ -16,48 +16,36 @@ export function Projects() {
       name: "Business Process Redesign & Optimization (DPMPTSP 02.01.01)",
       type: "Academic & Government Project",
       tools: ["Visual Paradigm Enterprise", "Google Forms", "Microsoft Word", "Gemini AI"],
-      primaryTool: "visualparadigm",
+      primaryTool: "bpmn",
       year: "2026",
       duration: "Selesai ✓",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHByb2Nlc3MlMjBvcHRpbWl6YXRpb258ZW58MHx8fHwxNzAzMjUwMDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       organization: "Tugas Besar Rekayasa Proses Bisnis (RPB) – Telkom University",
       department: "Process Excellence & System Analysis",
       location: "Bekasi / Bandung, Indonesia",
-      hasScrapbook: true,
       highlights: [
-        "Cross-Sector Modeling: Memetakan interaksi 5 aktor lintas sektor dengan BPMN 2.0",
-        "Empirical Data Validation: Merancang kuesioner validasi operasional digital untuk data riil",
-        "Quantitative Simulation Base: Menyusun parameter simulasi berbasis biaya operasional & kapasitas sumber daya",
-        "Regulatory Compliance: Menganalisis alur bisnis sesuai Perwal Kota Bekasi"
+        "Cross-Sector Modeling: Memetakan interaksi 5 aktor lintas sektor (DPMPTSP, Diskominfo, Bagian PBJ) dengan BPMN 2.0",
+        "Bottleneck Identification: Mengidentifikasi bottleneck koordinasi lintas OPD dan pengujian sistem yang masih manual",
+        "Process Simulation: Menyusun parameter simulasi berbasis biaya operasional dan kapasitas sumber daya",
+        "To-Be Redesign: Mengusulkan SLA koordinasi lintas OPD, skema rapat hybrid, dan Automated Cloud Testing"
       ],
       description: [
-        "Mengumpulkan data & wawancara stakeholder DPMPTSP terkait lead time dan biaya",
-        "Memodelkan Basic & Advance CFM dengan Visual Paradigm",
-        "Mengidentifikasi pemborosan dan hambatan birokrasi (As-Is)",
-        "Merancang perbaikan proses (To-Be) dengan otomatisasi pelaporan & standardisasi komitmen kerja antar instansi"
+        "Proyek ini berfokus pada analisis dan redesign proses bisnis Pengolahan, Penyajian, dan Pemanfaatan Data Informasi Perizinan di DPMPTSP Kota Bekasi. Menggunakan pemodelan BPMN As-Is/To-Be dan simulasi laboratorium, proyek ini mengidentifikasi bottleneck utama pada koordinasi lintas OPD (DPMPTSP, Diskominfo, Bagian PBJ) serta pengujian sistem yang masih manual, lalu menyusun usulan perbaikan berupa SLA koordinasi lintas OPD, skema rapat hybrid, dan modul Automated Cloud Testing untuk mengoptimalkan proses pengadaan dan pengembangan sistem informasi perizinan.",
+        "Business Impact: Menghasilkan usulan redesign proses yang berpotensi menurunkan biaya proses hingga ±50% (dari Rp2.350.000 menjadi ±Rp850.000 per instance), mempercepat waktu penyelesaian proyek 4-8 hari kerja, serta mempercepat SLA penanganan bug vendor dari 7 hari menjadi 2-4 hari kerja — tanpa mengubah struktur regulasi yang mengikat urutan proses."
       ],
-      impact: "Berhasil mengidentifikasi akar masalah utama yang menyebabkan total lead time proses mencapai 2 hingga 3 bulan hingga sistem go-live. Proyek ini memproyeksikan efisiensi waktu siklus hingga 30-40% pada usulan proses To-Be melalui pemotongan latency (jeda) rekapitulasi data manual dan minimalisasi miskomunikasi teknis antar instansi.",
-      achievements: [
-        "Berhasil memetakan visualisasi 7 aktivitas utama beserta sub-task operasional dari Start hingga End Event secara presisi",
-        "Menemukan titik pemborosan finansial pada rapat offline berkisar Rp 1.500.000 - Rp 2.000.000 per pertemuan yang berpotensi dialihkan secara digital",
-        "Berhasil memodelkan alur perulangan (looping) penanganan cacat fatal (major bugs) dan sistem keamanan menggunakan Exclusive Gateway (XOR) yang tervalidasi secara akademis"
-      ],
-      documentation: "(1) Basic Cross Functional Map (CFM), (2) Advance BPMN Diagram (Data Object, Data Store, & Text Annotation), (3) BPMN Process Simulation Profile (Resource Allocation & Cost Matrix), (4) Automated Questionnaire Tools (Google Forms)",
+      impact: "Menghasilkan usulan redesign proses yang berpotensi menurunkan biaya proses hingga ±50% (dari Rp2.350.000 menjadi ±Rp850.000 per instance), mempercepat waktu penyelesaian proyek 4-8 hari kerja, serta mempercepat SLA penanganan bug vendor dari 7 hari menjadi 2-4 hari kerja.",
       technicalSkills: [
-        "Business Process Mapping",
-        "BPMN 2.0",
-        "Data & Requirement Gathering",
-        "Qualitative & Quantitative Process Analysis",
+        "Business Process Mapping (BPMN 2.0)",
+        "As-Is / To-Be Analysis",
         "Process Simulation",
-        "Resource Staffing Analysis"
+        "Stakeholder Requirement Gathering",
+        "Cross-OPD Coordination Analysis"
       ],
-      keyInsights: [
-        "Inter-Agency Bottleneck: Hambatan utama pada integrasi sistem pemerintahan bukan terletak pada infrastruktur TI (karena server/hosting sudah digratiskan oleh Diskominfo), melainkan pada celah komunikasi koordinasi (silo mentality) antar Perangkat Daerah (OPD)",
-        "Resource Constraints: Keterbatasan jumlah tim pengawal (3 staf internal dan 2 tenaga ahli) membuat fase krusial seperti integrasi API sangat rentan terhadap delay jika tidak didukung oleh komitmen staf standby dari pihak eksternal"
-      ],
+      albumEmbed: "https://imgur.com/a/xPZ4voV/embed?pub=true",
       color: "bg-orange-600",
       links: {
-        documentation: "#"
+        "Laporan Akhir": "https://telkomuniversityofficial-my.sharepoint.com/:w:/g/personal/rizalfatihulihsan_student_telkomuniversity_ac_id/IQCNl6AglNScRq7J9eaxNDUrAdimBcfeBq9KnNmQAdD9NU8",
+        "Link Documentation": "https://drive.google.com/drive/folders/1pdj7IsjDeGxYz90f4Y4biXkUNzZo2ZDq?usp=sharing"
       }
     },
     {
@@ -65,7 +53,7 @@ export function Projects() {
       name: "Aspect-Based Sentiment Analysis on Smartphone Brand Tweets",
       type: "Academic Data Science Project",
       tools: ["Python", "Scikit-Learn", "Pandas", "TF-IDF Vectorizer", "LinearSVC", "GridSearchCV", "Streamlit"],
-      primaryTool: "python",
+      primaryTool: "dataanalysis",
       year: "2026",
       duration: "Selesai — Best Kelompok 🏆",
       image: "https://i.imgur.com/6t3eDD7.jpeg",
@@ -74,52 +62,39 @@ export function Projects() {
       location: "Bandung, Indonesia",
       architectureImage: "https://i.imgur.com/6t3eDD7.jpeg",
       highlights: [
-        "Large-Scale Text Processing: Membersihkan hampir 1 juta baris tweet dan mereduksi 735.548 data duplikat",
-        "Text-Aspect Fusion: Menggabungkan teks opini & aspek produk menjadi satu fitur representasi TF-IDF (5.000 fitur, n-gram 1–2)",
-        "Custom Stopwords: Mempertahankan kata negasi (not, no, never) untuk menjaga akurasi polaritas sentimen",
-        "Streamlit Deployment: Integrasi model ke web app interaktif untuk prediksi real-time & visualisasi word cloud"
+        "Business Understanding: Menetapkan tujuan — memahami sentimen publik per aspek produk smartphone untuk mendukung monitoring reputasi brand",
+        "Data Collection: Mengumpulkan sekitar 1 juta tweet mentah terkait brand smartphone",
+        "Data Preparation: Cleaning, dedup (735.548 baris), handling missing values (29,97%), Text-Aspect Fusion + TF-IDF feature engineering",
+        "Modeling: Membangun pipeline LinearSVC, tuning via GridSearchCV, validasi Stratified 5-Fold CV",
+        "Evaluation: Uji akurasi & ROC-AUC pada data test (skema 70:30)",
+        "Deployment & Reporting: Rilis dashboard Streamlit real-time + laporan akhir"
       ],
+      highlightsLabel: "Analysis Lifecycle",
       description: [
-        "Pembersihan Data Skala Besar: Melakukan text preprocessing menyeluruh (case folding, regex cleaning) dan mereduksi data dengan menghapus 735.548 data duplikat serta menangani 29,97% missing values",
-        "Rekayasa Fitur Pintar: Menggabungkan teks opini dan aspek produk menjadi satu fitur (Text-Aspect Fusion), lalu merepresentasikannya via TF-IDF (5.000 fitur, n-gram 1–2). Custom stopwords dibuat khusus untuk mempertahankan kata negasi",
-        "Pemodelan & Tuning: Membangun pipeline Linear SVM (LinearSVC) yang dioptimasi menggunakan GridSearchCV dan divalidasi dengan Stratified 5-Fold Cross Validation",
-        "Deployment: Mengintegrasikan model final ke dalam aplikasi web interaktif Streamlit untuk prediksi sentimen real-time dan visualisasi word cloud"
+        "Menerjemahkan hampir 1 juta tweet mentah menjadi insight sentimen per-aspek produk yang actionable untuk kebutuhan bisnis seperti monitoring reputasi brand.",
+        "Merancang pipeline pembersihan data skala besar dan fitur Text-Aspect Fusion agar model bisa membedakan sentimen per aspek secara akurat, lalu mendeploy hasilnya sebagai dashboard real-time — meraih predikat Best Kelompok."
       ],
-      impact: "Model terbaik (skema split data 70:30) berhasil mencapai Akurasi 99,99% dan skor ROC-AUC 1.0000 pada data uji. Berhasil mereduksi dataset mentah hampir 1 juta baris menjadi 264.451 baris data bersih siap latih tanpa kehilangan konteks makna sentimen. Proyek ini meraih predikat Best Kelompok pada Tugas Besar Penambangan Data Universitas Telkom 2026.",
+      impact: "Mereduksi data mentah sekitar 1 juta baris menjadi 264.451 baris bersih tanpa kehilangan konteks sentimen, menghasilkan model berakurasi 99,99% (ROC-AUC 1.0000) yang siap pakai sebagai dasar monitoring reputasi brand via dashboard interaktif.",
       achievements: [
-        "Akurasi 99,99% & ROC-AUC 1.0000 pada data uji (skema 70:30)",
-        "Mereduksi hampir 1 juta baris menjadi 264.451 baris data bersih",
-        "Menghapus 735.548 data duplikat & menangani 29,97% missing values",
-        "Custom stopwords strategy untuk preservasi kata negasi kritis",
-        "Meraih predikat Best Kelompok — Tugas Besar Penambangan Data Universitas Telkom 2026"
+        "Dashboard prediksi sentimen real-time (Streamlit)"
       ],
-      documentation: "(1) Python Script & Jupyter Notebooks (.ipynb), (2) Data Cleaning & Preprocessing Report, (3) Text-Aspect Fusion Feature Engineering Documentation, (4) LinearSVC + GridSearchCV Modeling Pipeline, (5) Streamlit Web Application, (6) Laporan Akhir PDF",
+      achievementsLabel: "Output",
       technicalSkills: [
-        "Natural Language Processing (NLP)",
-        "Aspect-Based Sentiment Analysis (ABSA)",
-        "Text Preprocessing & Feature Engineering",
-        "TF-IDF Vectorization",
-        "Support Vector Machine (LinearSVC)",
-        "Hyperparameter Tuning (GridSearchCV)",
-        "Stratified K-Fold Cross Validation",
-        "Streamlit Deployment"
-      ],
-      keyInsights: [
-        "Text-Aspect Fusion: Menggabungkan kolom teks dan aspek sebelum vektorisasi secara signifikan meningkatkan kemampuan model membedakan sentimen pada aspek yang berbeda dari tweet yang sama",
-        "Negation Preservation: Custom stopwords yang mempertahankan not/no/never adalah kunci akurasi polaritas — tanpa ini, 'not great battery' bisa salah diklasifikasikan sebagai sentimen positif",
-        "CRISP-DM End-to-End: Metodologi CRISP-DM memastikan setiap keputusan teknis (dari cleaning hingga deployment) terhubung kembali ke tujuan bisnis yang terukur"
+        "Data & Requirements Analysis",
+        "Data Cleaning & Feature Engineering",
+        "Insight Reporting",
+        "Dashboard/Tool Deployment",
+        "Data-Driven Decision Support"
       ],
       color: "bg-indigo-600",
-      links: {
-        "Laporan PDF": "https://drive.google.com/file/d/1Ul9fQa4h5_cF2y-0CpUAe6MVphAQ6ADW/view?usp=sharing"
-      }
+      links: {}
     },
     {
       icon: Database,
       name: "MANG OLIN: Transformasi Layanan Konsultasi Online Kepegawaian",
       type: "System Analysis & UI/UX Design",
       tools: ["Figma", "Visual Paradigm", "Google Forms"],
-      primaryTool: "visualparadigm",
+      primaryTool: "bpmn",
       year: "2025",
       duration: "September - Desember 2025",
       image: "https://images.unsplash.com/photo-1619243142206-381c5aeda31c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb3Zlcm5tZW50JTIwZGlnaXRhbCUyMHNlcnZpY2UlMjB0cmFuc2Zvcm1hdGlvbnxlbnwxfHx8fDE3NzI2OTg0NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -154,10 +129,11 @@ export function Projects() {
       name: "Beasiswa Tracker Spreadsheet",
       type: "Excel Tool",
       tools: ["Excel", "Google Sheets", "Spreadsheet"],
-      primaryTool: "excel",
+      primaryTool: "dataanalysis",
       year: "2025",
       duration: "1 month",
       image: "https://i.imgur.com/v51DQoY.png",
+      architectureImage: "https://i.imgur.com/v51DQoY.png",
       description: "Template spreadsheet beasiswa terstruktur yang membantu pelajar/mahasiswa memonitor proses pendaftaran beasiswa secara end-to-end dari pencatatan hingga reminder deadline.",
       highlights: [
         "Kolom lengkap: Nama Beasiswa, Link, Deadline, Status, Catatan",
@@ -186,10 +162,11 @@ export function Projects() {
       name: "Analisis Kinerja Stockbit 2024",
       type: "Financial Analysis Project",
       tools: ["Power BI", "Power Query", "DAX"],
-      primaryTool: "powerbi",
+      primaryTool: "dataviz",
       year: "2024",
       duration: "1 month",
       image: "https://i.imgur.com/jVineTK.png",
+      architectureImage: "https://i.imgur.com/jVineTK.png",
       description: [
         "Mengintegrasikan data keuangan, pertumbuhan nasabah, dan SDM ke dalam dashboard interaktif Power BI untuk mengungkap gap laba bersih perusahaan.",
         "Mengeksekusi data modeling (transposing & unpivoting) serta menerapkan fungsi DAX tingkat lanjut (MAXX, VALUE, SUBSTITUTE) untuk pembersihan data.",
@@ -223,10 +200,11 @@ export function Projects() {
       name: "Korelasi Korupsi, Pengangguran, & Kekayaan",
       type: "Data Visualization",
       tools: ["Tableau", "Data Analysis"],
-      primaryTool: "tableau",
+      primaryTool: "dataviz",
       year: "2024",
       duration: "1 month",
       image: "https://i.imgur.com/NT4U4Wi.png",
+      architectureImage: "https://i.imgur.com/NT4U4Wi.png",
       description: "Menyajikan korelasi antara tiga metrik ekonomi dan tata kelola (Korupsi, Pengangguran, dan Kekayaan/GDP) di tingkat global menggunakan Tableau Public.",
       highlights: [
         "Three-Way Correlation dengan Bubble Chart (3 dimensi)",
@@ -254,6 +232,39 @@ export function Projects() {
         tableau: "https://public.tableau.com/app/profile/ahmad.zidan8536/viz/analisiscorruption/Dashboard1?publish=yes",
         linkedin: "https://www.linkedin.com/in/ahmad-zidan-arifin-71426b316"
       }
+    },
+    {
+      icon: BarChart3,
+      name: "B2B Executive Analytics Dashboard: Marketing & Sales Optimization",
+      type: "Business Intelligence / Data Analyst",
+      tools: ["Google Data Studio", "Looker Studio"],
+      primaryTool: "dataviz",
+      year: "2025",
+      duration: "1 month",
+      image: "https://i.imgur.com/wFVdKZ3.png",
+      architectureImage: "https://i.imgur.com/wFVdKZ3.png",
+      description: [
+        "Proyek ini merupakan simulasi Business Intelligence yang berfokus pada analisis data portofolio klien B2B (BAU BAU Corp). Tujuan utamanya adalah merancang executive dashboard interaktif untuk membantu level manajemen mengevaluasi efisiensi anggaran pemasaran (marketing spend) dan memitigasi risiko pada status kontrak pelanggan.",
+        "Proyek ini menjembatani data teknis dengan strategi bisnis yang dapat langsung ditindaklanjuti (actionable insights)."
+      ],
+      highlights: [
+        "Executive Dashboard: Merancang dashboard interaktif untuk evaluasi marketing spend dan risiko kontrak pelanggan",
+        "Actionable Insights: Menerjemahkan data teknis menjadi panduan taktis yang siap digunakan manajemen",
+        "Cost-Efficiency Focus: Mengidentifikasi peluang penekanan biaya operasional (cost-efficiency)",
+        "Churn Prevention: Memitigasi risiko kehilangan pelanggan melalui analisis status kontrak"
+      ],
+      impact: "Menghasilkan instrumen visual yang menyederhanakan data kompleks menjadi panduan taktis, memungkinkan manajemen membuat keputusan data-driven untuk menekan biaya operasional (cost-efficiency) dan mencegah kehilangan pelanggan (churn rate).",
+      technicalSkills: [
+        "Business Intelligence",
+        "Executive Dashboard Design",
+        "Data Visualization",
+        "Marketing Analytics",
+        "Actionable Insights Reporting"
+      ],
+      color: "bg-cyan-600",
+      links: {
+        documentation: "https://datastudio.google.com/u/0/reporting/ccfae570-d789-460f-9eab-0cfc8e5ab304/page/4cw5F"
+      }
     }
   ];
 
@@ -266,24 +277,18 @@ export function Projects() {
         </div>
 
         <Tabs defaultValue="all" className="w-full">
-          <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-6 mb-8 bg-amber-50 border-2 border-amber-200">
+          <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-4 mb-8 bg-amber-50 border-2 border-amber-200">
             <TabsTrigger value="all" className="data-[state=active]:bg-amber-600 data-[state=active]:text-white text-xs md:text-sm">
               All
             </TabsTrigger>
-            <TabsTrigger value="python" className="data-[state=active]:bg-amber-600 data-[state=active]:text-white text-xs md:text-sm">
-              Python
+            <TabsTrigger value="dataviz" className="data-[state=active]:bg-amber-600 data-[state=active]:text-white text-xs md:text-sm">
+              Data Visualization
             </TabsTrigger>
-            <TabsTrigger value="excel" className="data-[state=active]:bg-amber-600 data-[state=active]:text-white text-xs md:text-sm">
-              Excel
+            <TabsTrigger value="dataanalysis" className="data-[state=active]:bg-amber-600 data-[state=active]:text-white text-xs md:text-sm">
+              Data Analysis
             </TabsTrigger>
-            <TabsTrigger value="tableau" className="data-[state=active]:bg-amber-600 data-[state=active]:text-white text-xs md:text-sm">
-              Tableau
-            </TabsTrigger>
-            <TabsTrigger value="powerbi" className="data-[state=active]:bg-amber-600 data-[state=active]:text-white text-xs md:text-sm">
-              Power BI
-            </TabsTrigger>
-            <TabsTrigger value="visualparadigm" className="data-[state=active]:bg-amber-600 data-[state=active]:text-white text-xs md:text-sm">
-              BPMN
+            <TabsTrigger value="bpmn" className="data-[state=active]:bg-amber-600 data-[state=active]:text-white text-xs md:text-sm">
+              Business Process
             </TabsTrigger>
           </TabsList>
 
@@ -329,91 +334,46 @@ export function Projects() {
             </div>
           </TabsContent>
 
-          <TabsContent value="python" className="space-y-6">
-            {/* Mobile Carousel */}
+          <TabsContent value="dataviz" className="space-y-6">
             <div className="md:hidden">
               <MobileCarousel slidesToShow={1.2}>
-                {projects.filter(project => project.primaryTool === "python").map((project, index) => (
+                {projects.filter(p => p.primaryTool === "dataviz").map((project, index) => (
                   <ProjectCard key={index} project={project} />
                 ))}
               </MobileCarousel>
             </div>
-
-            {/* Desktop Grid */}
             <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {projects.filter(project => project.primaryTool === "python").map((project, index) => (
+              {projects.filter(p => p.primaryTool === "dataviz").map((project, index) => (
                 <ProjectCard key={index} project={project} />
               ))}
             </div>
           </TabsContent>
 
-          <TabsContent value="excel" className="space-y-6">
-            {/* Mobile Carousel */}
+          <TabsContent value="dataanalysis" className="space-y-6">
             <div className="md:hidden">
               <MobileCarousel slidesToShow={1.2}>
-                {projects.filter(project => project.primaryTool === "excel").map((project, index) => (
+                {projects.filter(p => p.primaryTool === "dataanalysis").map((project, index) => (
                   <ProjectCard key={index} project={project} />
                 ))}
               </MobileCarousel>
             </div>
-
-            {/* Desktop Grid */}
             <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {projects.filter(project => project.primaryTool === "excel").map((project, index) => (
+              {projects.filter(p => p.primaryTool === "dataanalysis").map((project, index) => (
                 <ProjectCard key={index} project={project} />
               ))}
             </div>
           </TabsContent>
 
-          <TabsContent value="tableau" className="space-y-6">
-            {/* Mobile Carousel */}
+          <TabsContent value="bpmn" className="space-y-6">
             <div className="md:hidden">
               <MobileCarousel slidesToShow={1.2}>
-                {projects.filter(project => project.primaryTool === "tableau").map((project, index) => (
+                {projects.filter(p => p.primaryTool === "bpmn").map((project, index) => (
                   <ProjectCard key={index} project={project} />
                 ))}
               </MobileCarousel>
             </div>
-            
-            {/* Desktop Grid */}
             <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {projects.filter(project => project.primaryTool === "tableau").map((project, index) => (
-                <ProjectCard key={index} project={project} />
-              ))}
-            </div>
-          </TabsContent>
-
-          <TabsContent value="powerbi" className="space-y-6">
-            {/* Mobile Carousel */}
-            <div className="md:hidden">
-              <MobileCarousel slidesToShow={1.2}>
-                {projects.filter(project => project.primaryTool === "powerbi").map((project, index) => (
-                  <ProjectCard key={index} project={project} />
-                ))}
-              </MobileCarousel>
-            </div>
-            
-            {/* Desktop Grid */}
-            <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {projects.filter(project => project.primaryTool === "powerbi").map((project, index) => (
-                <ProjectCard key={index} project={project} />
-              ))}
-            </div>
-          </TabsContent>
-
-          <TabsContent value="visualparadigm" className="space-y-6">
-            {/* Mobile Carousel */}
-            <div className="md:hidden">
-              <MobileCarousel slidesToShow={1.2}>
-                {projects.filter(project => project.primaryTool === "visualparadigm").map((project, index) => (
-                  <ProjectCard key={index} project={project} />
-                ))}
-              </MobileCarousel>
-            </div>
-            
-            {/* Desktop Grid */}
-            <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {projects.filter(project => project.primaryTool === "visualparadigm").map((project, index) => (
+              {projects.filter(p => p.primaryTool === "bpmn").map((project, index) => (
                 <ProjectCard key={index} project={project} />
               ))}
             </div>
@@ -499,15 +459,29 @@ function ProjectCard({ project }: { project: any }) {
             </div>
           )}
 
+          {/* Imgur album embed */}
+          {project.albumEmbed && (
+            <div className="rounded-lg overflow-hidden border-2 border-orange-200">
+              <iframe
+                src={project.albumEmbed}
+                className="w-full"
+                style={{ height: "420px", border: "none" }}
+                allowFullScreen
+                title="Foto Dokumentasi Proyek"
+              />
+              <p className="text-xs text-center text-slate-500 bg-orange-50 py-2">Foto Dokumentasi Proyek</p>
+            </div>
+          )}
+
           {/* Architecture/Scrapbook image for projects that have one */}
           {project.architectureImage && (
-            <div className="rounded-lg overflow-hidden border-2 border-indigo-200">
+            <div className="rounded-lg overflow-hidden border-2 border-amber-200">
               <img
                 src={project.architectureImage}
-                alt="Project Architecture"
+                alt="Project Preview"
                 className="w-full object-cover"
               />
-              <p className="text-xs text-center text-slate-500 bg-indigo-50 py-2">Arsitektur & Tampilan Proyek</p>
+              <p className="text-xs text-center text-slate-500 bg-amber-50 py-2">Tampilan & Dokumentasi Proyek</p>
             </div>
           )}
 
@@ -550,7 +524,7 @@ function ProjectCard({ project }: { project: any }) {
           </div>
 
           <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Key Highlights</h4>
+            <h4 className="font-semibold text-slate-900 mb-2">{project.highlightsLabel || "Key Highlights"}</h4>
             <ul className="space-y-1.5">
               {project.highlights.map((highlight: string, idx: number) => (
                 <li key={idx} className="flex items-start gap-2 text-sm text-slate-700">
@@ -586,7 +560,7 @@ function ProjectCard({ project }: { project: any }) {
           {/* Key Achievements - if available */}
           {project.achievements && (
             <div>
-              <h4 className="font-semibold text-slate-900 mb-2">Key Achievements</h4>
+              <h4 className="font-semibold text-slate-900 mb-2">{project.achievementsLabel || "Key Achievements"}</h4>
               <div className="space-y-2">
                 {project.achievements.map((achievement: string, idx: number) => (
                   <div key={idx} className="flex items-start gap-2 text-sm bg-green-50 border-l-4 border-green-500 p-3 rounded">
@@ -598,21 +572,25 @@ function ProjectCard({ project }: { project: any }) {
             </div>
           )}
 
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Technical Documentation</h4>
-            <p className="text-slate-700 text-sm leading-relaxed">{project.documentation}</p>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Tools & Technologies</h4>
-            <div className="flex flex-wrap gap-2">
-              {project.tools.map((tool: string, toolIndex: number) => (
-                <Badge key={toolIndex} className="bg-amber-100 text-amber-800 border-amber-300">
-                  {tool}
-                </Badge>
-              ))}
+          {project.documentation && (
+            <div>
+              <h4 className="font-semibold text-slate-900 mb-2">Technical Documentation</h4>
+              <p className="text-slate-700 text-sm leading-relaxed">{project.documentation}</p>
             </div>
-          </div>
+          )}
+
+          {project.tools && project.tools.length > 0 && (
+            <div>
+              <h4 className="font-semibold text-slate-900 mb-2">Tools & Technologies</h4>
+              <div className="flex flex-wrap gap-2">
+                {project.tools.map((tool: string, toolIndex: number) => (
+                  <Badge key={toolIndex} className="bg-amber-100 text-amber-800 border-amber-300">
+                    {tool}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Technical Skills - if available */}
           {project.technicalSkills && (
@@ -643,20 +621,21 @@ function ProjectCard({ project }: { project: any }) {
             </div>
           )}
 
-          {/* Links */}
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Links & Resources</h4>
-            <div className="flex flex-wrap gap-2">
-              {Object.entries(project.links).map(([key, value]: [string, any]) => (
-                <Button key={key} variant="outline" size="sm" className="text-xs" asChild>
-                  <a href={value} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-3 h-3 mr-1" />
-                    {key.charAt(0).toUpperCase() + key.slice(1)}
-                  </a>
-                </Button>
-              ))}
+          {project.links && Object.keys(project.links).length > 0 && (
+            <div>
+              <h4 className="font-semibold text-slate-900 mb-2">Links & Resources</h4>
+              <div className="flex flex-wrap gap-2">
+                {Object.entries(project.links).map(([key, value]: [string, any]) => (
+                  <Button key={key} variant="outline" size="sm" className="text-xs" asChild>
+                    <a href={value} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-3 h-3 mr-1" />
+                      {key.charAt(0).toUpperCase() + key.slice(1)}
+                    </a>
+                  </Button>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </DialogContent>
     </Dialog>

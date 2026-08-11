@@ -12,50 +12,24 @@ export function Experience() {
 
   const experiences = [
     {
-      role: "Data & Research Analyst",
+      role: "Business Analyst & Research",
       organization: "Proyek Sosial CAKRA",
       department: "Research & Data Analysis",
       program: "CAKRA: AI Literacy & Character Building",
       type: "social",
       period: "2026",
-      duration: "8 weeks",
+      duration: "8 minggu",
       location: "SMPK Kalam Kudus, Bandung",
       image: "https://i.imgur.com/PUoU2lj.jpeg",
-      subtitle: "Ekosistem edukasi yang mengintegrasikan Generative AI dengan nilai Pancasila sebagai filter etika bagi siswa menengah di Bandung",
-      highlights: [
-        "Multidisciplinary Collaboration: Memimpin riset dalam tim lintas fungsi (8 orang) untuk menyelenggarakan workshop intensif bagi 50 siswa",
-        "Data-Driven Strategy: Merancang instrumen evaluasi (pre/post-test) dan survei kepuasan yang terintegrasi dalam alur acara",
-        "High Engagement: Mencapai partisipasi survei 100% melalui pendekatan komunikasi yang ringan dan teknik gamification",
-        "Ethical Framework: Mengembangkan CAKRA Compass sebagai standar etika penggunaan AI bagi pelajar"
-      ],
+      secondImage: "https://i.imgur.com/yKhl4UJ.jpeg",
+      subtitle: "Program literasi AI berbasis nilai Pancasila untuk 50 siswa SMA, sebagai respons atas temuan bahwa 95% pelajar Asia Tenggara berisiko menyalahgunakan AI (Survei Turnitin, 2025).",
       description: [
-        "Melakukan riset awal terkait literasi digital siswa SMA di Bandung",
-        "Bertanggung jawab pada pengumpulan data survei dan evaluasi dampak proyek sosial edukasi",
-        "Mengelola fase Persiapan (Minggu 1–2) dan Evaluasi & Serah Terima (Minggu 11–12)",
-        "Mendukung implementasi proyek yang berfokus pada SDG 4 (Quality Education) dengan nilai-nilai Pancasila"
+        "Memimpin riset kebutuhan dan strategi berbasis data untuk program literasi AI bagi 50 siswa SMA, merespons temuan bahwa 95% pelajar Asia Tenggara berisiko menyalahgunakan AI (Survei Turnitin, 2025).",
+        "Merancang instrumen evaluasi pre/post-test dan survei kepuasan yang terintegrasi ke alur workshop, mencapai partisipasi 100%.",
+        "Hasil menunjukkan 80%+ peserta mampu menerapkan prinsip citing dan cross-check pada output AI, mendukung pencapaian SDG 4 (Quality Education)."
       ],
-      achievements: [
-        "Berhasil meningkatkan literasi digital dan pemahaman etika AI berbasis Pancasila pada 50 peserta",
-        "Data menunjukkan 80%+ siswa mampu mengimplementasikan prinsip citing dan cross-check pada output AI",
-        "Proyek menghasilkan komunitas aktif CAKRA Care untuk mentorship berkelanjutan"
-      ],
-      impact: "Berhasil meningkatkan literasi digital dan pemahaman etika AI berbasis Pancasila pada 50 peserta. Data menunjukkan 80%+ siswa mampu mengimplementasikan prinsip citing dan cross-check pada output AI. Proyek menghasilkan komunitas aktif CAKRA Care untuk mentorship berkelanjutan.",
-      technicalDoc: [
-        "Landing Page responsif (HTML/CSS/JS)",
-        "E-Book Panduan interaktif",
-        "Automated Feedback System (Google Forms)",
-        "Komunitas Digital via WhatsApp/Telegram"
-      ],
-      tools: ["Google Forms", "Gemini AI", "NotebookLM", "Figma", "HTML/CSS/JS"],
-      skills: ["Data & Research Analysis", "Survey Design", "Event Coordination", "Team Collaboration", "Stakeholder Engagement"],
-      insights: [
-        "User-Centric: Analogi nilai Pancasila terbukti lebih efektif dalam menanamkan etika digital pada remaja dibandingkan teori formal",
-        "Productivity: Penggunaan prompting yang terarah meningkatkan efisiensi riset akademik siswa tanpa mengurangi integritas hasil karya"
-      ],
-      links: {
-        web: "https://www.cakra-edu.site/",
-        instagram: "https://www.instagram.com/cakraproject.id?igsh=dTBmZ2szNnFlbmJ6"
-      },
+      impact: "Meningkatkan literasi digital dan etika AI berbasis Pancasila pada 50 peserta, dengan 80%+ siswa mampu menerapkan prinsip citing dan cross-check pada output AI. Data pre/post-test dan survei kepuasan (partisipasi 100%) menjadi dasar keberlanjutan program melalui komunitas CAKRA Care.",
+      skills: ["Data & Research Analysis", "Survey Design", "Stakeholder Engagement", "Event Coordination", "Team Collaboration"],
       color: "bg-teal-600"
     },
     {
@@ -296,25 +270,29 @@ function ExperienceCard({ experience }: { experience: any }) {
         </DialogHeader>
         
         <div className="space-y-4 py-4">
-          {/* Image Placeholder for Scrapbook */}
-          <div className="relative group">
-            <div
-              onClick={() => setImageDialogOpen(true)}
-              className="relative h-48 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
-            >
-              <img
-                src={experience.image}
-                alt={experience.organization}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 rounded-full p-2">
-                  <Expand className="w-5 h-5 text-slate-700" />
+          {/* Images */}
+          <div className={`grid gap-3 ${experience.secondImage ? "grid-cols-2" : "grid-cols-1"}`}>
+            {[experience.image, experience.secondImage].filter(Boolean).map((src: string, i: number) => (
+              <div key={i} className="relative group">
+                <div
+                  onClick={() => setImageDialogOpen(true)}
+                  className="relative h-44 rounded-lg overflow-hidden cursor-pointer hover:opacity-90 transition-opacity"
+                >
+                  <img
+                    src={src}
+                    alt={experience.organization}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                    <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 rounded-full p-2">
+                      <Expand className="w-4 h-4 text-slate-700" />
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <p className="text-xs text-slate-500 text-center mt-1">Klik gambar untuk melihat ukuran penuh</p>
+            ))}
           </div>
+          <p className="text-xs text-slate-500 text-center -mt-1">Klik gambar untuk melihat ukuran penuh</p>
 
           {/* Subtitle - only for CAKRA */}
           {experience.subtitle && (
@@ -396,17 +374,19 @@ function ExperienceCard({ experience }: { experience: any }) {
             </div>
           )}
 
-          <div>
-            <h4 className="font-semibold text-slate-900 mb-2">Key Achievements</h4>
-            <div className="space-y-2">
-              {experience.achievements.map((achievement: string, idx: number) => (
-                <div key={idx} className="flex items-start gap-2 text-sm bg-green-50 border-l-4 border-green-500 p-3 rounded">
-                  <span className="text-green-600 font-bold">✓</span>
-                  <span className="text-slate-700">{achievement}</span>
-                </div>
-              ))}
+          {experience.achievements && experience.achievements.length > 0 && (
+            <div>
+              <h4 className="font-semibold text-slate-900 mb-2">Key Achievements</h4>
+              <div className="space-y-2">
+                {experience.achievements.map((achievement: string, idx: number) => (
+                  <div key={idx} className="flex items-start gap-2 text-sm bg-green-50 border-l-4 border-green-500 p-3 rounded">
+                    <span className="text-green-600 font-bold">✓</span>
+                    <span className="text-slate-700">{achievement}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Technical Documentation - only for CAKRA */}
           {experience.technicalDoc && (

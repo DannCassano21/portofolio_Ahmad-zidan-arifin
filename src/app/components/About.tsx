@@ -33,6 +33,7 @@ export function About() {
         "Microsoft Excel (Advanced: Pivot Table, Index Match, Calculated Fields)",
         "Large-Scale Data Processing & Cleaning",
         "Exploratory Data Analysis (EDA)",
+        "Data Visualization & Storytelling",
         "Executive Data Reporting & Dashboarding"
       ]
     },
@@ -54,18 +55,17 @@ export function About() {
       skills: [
         "Python (Pandas, NumPy, Scikit-Learn)",
         "SQL (MySQL)",
-        "Power BI & Tableau",
+        "Power BI, Tableau & Google Data Studio",
         "Streamlit",
-        "Visual Paradigm & Figma",
-        "Microsoft Excel & Google Sheets"
+        "Visual Paradigm & Figma"
       ]
     }
   ];
 
   const additionalCompetencies = [
-    "Analytical Problem Solving",
+    "Time & Priority Management",
     "Data & Insights Communication",
-    "Cross-Functional Collaboration",
+    "Stakeholder Interviewing & Requirement Elicitation",
     "Detail-Oriented & Accuracy",
     "Adaptability & Continuous Learning"
   ];
@@ -128,7 +128,7 @@ export function About() {
                     <Button
                       variant="outline"
                       className="w-full border-2 border-amber-600 text-amber-700 hover:bg-amber-50 text-xs md:text-sm py-2"
-                      onClick={() => window.open('https://drive.google.com/file/d/1LBCD0b0M2wA2LuGbAVutiEKmvJnZs-DH/preview', '_blank')}
+                      onClick={() => window.open('https://www.canva.com/design/DAHRnQgVb2g/jjYxzFChoytgJKw3NMEEdg/view?utlId=h67b3067663#2', '_blank')}
                     >
                       <FolderKanban className="w-3.5 md:w-4 h-3.5 md:h-4 mr-1.5 md:mr-2" />
                       View Portfolio
@@ -146,10 +146,10 @@ export function About() {
                 <h3 className="text-base md:text-lg font-bold text-slate-900 mb-2 md:mb-3">Hello! 👋</h3>
                 <div className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-slate-600 leading-relaxed">
                   <p>
-                    Mahasiswa S1 Sistem Informasi Telkom University yang <span className="font-semibold text-amber-800">analitis & detail-oriented</span>, dengan ketertarikan kuat pada irisan Business Development dan Data Analytics.
+                    Punya ketertarikan besar di dunia <span className="font-semibold text-amber-800">Business Analysis dan Data Analytics</span>, dengan gaya kerja yang analitis dan detail-oriented.
                   </p>
                   <p className="hidden md:block">
-                    Berpengalaman mengolah dataset berskala besar dan membangun <span className="font-semibold text-amber-800">dashboard visualisasi interaktif</span> selama magang di BKN Pusat (Direktorat PDPI), serta menguasai Business Process Redesign (BPMN 2.0) untuk merancang solusi digital yang efisien. Siap berkontribusi aktif sebagai Business Development Intern maupun Data Analyst dengan pendekatan data-driven yang strategis.
+                    Memiliki pengalaman magang di BKN Pusat (Direktorat Pengolahan Data dan Pelayanan Informasi), mengolah dataset dan membangun <span className="font-semibold text-amber-800">dashboard visualisasi interaktif</span> untuk mendukung pengambilan keputusan berbasis data. Menguasai Business Process Redesign dengan notasi BPMN 2.0 untuk memetakan proses As-Is ke To-Be dan merancang solusi digital yang lebih efisien. Didukung kemampuan komunikasi lintas stakeholder, siap berkontribusi sebagai Business Analyst maupun Data Analyst dengan pendekatan yang strategis dan data-driven.
                   </p>
                 </div>
               </CardContent>

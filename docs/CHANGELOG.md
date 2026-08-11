@@ -7,6 +7,123 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2026-08-11
+
+### Added
+- **New Project: Aspect-Based Sentiment Analysis on Smartphone Brand Tweets**
+  - Model LinearSVC + TF-IDF, Best Kelompok Tugas Besar Penambangan Data Universitas Telkom 2026
+  - Akurasi 99,99% & ROC-AUC 1.0000, dataset ~1 juta tweet
+  - Includes Analysis Lifecycle section (CRISP-DM 6 stages) & Streamlit deployment link
+  - `architectureImage`: https://i.imgur.com/6t3eDD7.jpeg
+  - File: `src/app/components/Projects.tsx`
+
+- **New Project: B2B Executive Analytics Dashboard: Marketing & Sales Optimization**
+  - Tools: Google Data Studio / Looker Studio
+  - Image: https://i.imgur.com/wFVdKZ3.png
+  - Link documentation: Looker Studio report
+  - `primaryTool: "dataviz"`
+  - File: `src/app/components/Projects.tsx`
+
+- **Projects: `architectureImage` added to existing cards**
+  - Stockbit: `https://i.imgur.com/jVineTK.png`
+  - Korupsi: `https://i.imgur.com/NT4U4Wi.png`
+  - Beasiswa Tracker: `https://i.imgur.com/v51DQoY.png`
+  - Now all imgur-hosted projects display image at top of dialog
+
+- **Projects: Imgur album embed support**
+  - DPMPTSP card: album `https://imgur.com/a/xPZ4voV/embed` rendered as iframe in dialog
+  - New field `albumEmbed` added to project data model
+  - File: `src/app/components/Projects.tsx`
+
+- **Experience (CAKRA): Second photo added**
+  - `secondImage: "https://i.imgur.com/yKhl4UJ.jpeg"`
+  - ExperienceCard updated: two photos displayed side-by-side (2-column grid) in dialog
+  - File: `src/app/components/Experience.tsx`
+
+- **About: Data Visualization & Storytelling added to Data Skills**
+  - File: `src/app/components/About.tsx`
+
+### Changed
+- **Hero Section**
+  - Subtitle: "Business Analyst & Data Enthusiast" → "Business & Data Analyst"
+  - Description: shorter, more focused on data storytelling & decision-making
+  - Font size reduced for name (`text-2xl md:text-4xl lg:text-5xl`) + `whitespace-nowrap`
+  - File: `src/app/components/Hero.tsx`
+
+- **About Section — Hello! 👋 card**
+  - Bio rewritten: ketertarikan Business Analysis & Data Analytics, pengalaman BKN Pusat (Direktorat PDPI), BPMN 2.0, stakeholder communication
+  - Font & spacing compacted (`text-xs md:text-sm`)
+  - File: `src/app/components/About.tsx`
+
+- **About Section — Skills**
+  - Tools & Technology: added "Power BI, Tableau & Google Data Studio"; removed "Microsoft Excel & Google Sheets" (already in Data Skills)
+  - Additional Competencies replaced with: Time & Priority Management, Data & Insights Communication, Stakeholder Interviewing & Requirement Elicitation, Detail-Oriented & Accuracy, Adaptability & Continuous Learning
+  - File: `src/app/components/About.tsx`
+
+- **About Section — Buttons**
+  - View CV: `https://drive.google.com/file/d/14uSeP4_684XJsn8qTlta9p4oTgQXNpUV/preview`
+  - View Portfolio: `https://www.canva.com/design/DAHRnQgVb2g/jjYxzFChoytgJKw3NMEEdg/view?utlId=h67b3067663#2` (migrated from Google Drive → Canva)
+  - File: `src/app/components/About.tsx`
+
+- **About Section — Statistics**
+  - Organization count: 1 → 2
+  - File: `src/app/components/About.tsx`
+
+- **Projects — Filter tabs restructured**
+  - Old: All, Python, Excel, Tableau, Power BI, BPMN (6 tabs)
+  - New: All, Data Visualization, Data Analysis, Business Process (4 tabs)
+  - `primaryTool` values updated: `dataviz` (Power BI, Tableau, Data Studio), `dataanalysis` (Python, Excel), `bpmn` (BPMN/Visual Paradigm)
+  - File: `src/app/components/Projects.tsx`
+
+- **Projects — DPMPTSP card**
+  - `duration`: "On-Progress" → "Selesai ✓"
+  - Description rewritten: fokus bottleneck koordinasi lintas OPD + business impact (biaya turun ±50%)
+  - Links updated: Laporan Akhir (SharePoint) + Link Documentation (Drive)
+  - Foto proyek embedded via `albumEmbed` (Imgur)
+  - File: `src/app/components/Projects.tsx`
+
+- **Projects — Stockbit card**
+  - Description (Responsibilities) rewritten: 3 action-oriented bullets
+  - Impact, highlights, technicalSkills, keyInsights updated
+  - File: `src/app/components/Projects.tsx`
+
+- **Projects — ABSA card**
+  - `highlightsLabel: "Analysis Lifecycle"` — heading renamed
+  - `achievementsLabel: "Output"` — section renamed
+  - Responsibilities: 2 concise bullets
+  - Removed: documentation, keyInsights, links
+  - File: `src/app/components/Projects.tsx`
+
+- **Experience — CAKRA card**
+  - `role`: "Data & Research Analyst" → "Business Analyst & Research"
+  - `duration`: "8 weeks" → "8 minggu"
+  - Description, impact, skills rewritten (research-led, 100% participation, 80%+ SDG 4 outcome)
+  - Removed: highlights, achievements, technicalDoc, tools, insights, links
+  - `subtitle` updated: survei Turnitin 95% context
+  - File: `src/app/components/Experience.tsx`
+
+- **Experience — BKN card**
+  - Responsibilities rewritten: Power BI & Tableau dashboards explicitly mentioned
+  - Removed achievement: "Mengurangi waktu processing data sebesar 30%"
+  - File: `src/app/components/Experience.tsx`
+
+- **Certifications — card layout**
+  - Provider & year now on one line: `"Udemy · 2025"` format
+  - Removed Duration field from dialog Certificate Information
+  - Removed "32,5 jam" from Udemy description
+  - File: `src/app/components/Certifications.tsx`
+
+- **Projects dialog — conditional rendering**
+  - "Technical Documentation", "Tools & Technologies", "Links & Resources", "Key Achievements" sections now conditional (hidden if empty)
+  - `highlightsLabel` and `achievementsLabel` fields supported for custom section headings
+  - File: `src/app/components/Projects.tsx`
+
+- **Experience dialog — conditional rendering**
+  - "Key Achievements" section now conditional
+  - File: `src/app/components/Experience.tsx`
+
+---
+
 ## [1.0.1] - 2026-06-04
 
 ### Changed

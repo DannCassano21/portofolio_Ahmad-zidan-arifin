@@ -27,12 +27,12 @@ export function Hero() {
                 Ahmad Zidan Arifin
               </h1>
               <h2 className="text-base md:text-xl lg:text-2xl text-amber-800 font-light">
-                Business Development & Data Analyst Enthusiast
+                Business & Data Analyst
               </h2>
             </div>
 
             <p className="text-xs md:text-sm text-slate-600 leading-relaxed max-w-lg">
-              Mahasiswa S1 Sistem Informasi Telkom University dengan keahlian yang berimbang dalam <span className="font-semibold text-amber-800">analisis proses bisnis dan pengolahan data strategis</span>. Berpengalaman nyata dalam pemetaan proses As-Is ke To-Be, pemrosesan dataset berskala besar, serta menghasilkan rekomendasi yang data-driven dengan kombinasi teknis analitik (Python, SQL, Power BI) dan komunikasi strategis.
+              Mahasiswa S1 Sistem Informasi Telkom University dengan ketertarikan di bidang data dan bisnis. Terbiasa memproses data mentah, memetakan proses bisnis, dan menerjemahkannya melalui <span className="font-semibold text-amber-800">visualisasi serta data storytelling</span> untuk mendukung pengambilan keputusan.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-2 md:pt-4">
